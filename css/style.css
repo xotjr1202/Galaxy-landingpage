@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #000;
+  background: linear-gradient(0deg, rgb(24, 10, 104), #fff 20%);
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#header {
+  min-width: 1200px;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 999;
+}
+#header h1 {
+  position: absolute;
+  left: 100px;
+  top: 60px;
+}
+#gnb {
+  position: absolute;
+  right: 200px;
+  top: 80px;
+}
+#gnb > ul > li {
+  display: inline-block;
+  margin-left: 3em;
+}
+#gnb > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 1000;
+}
+
+#title {
+  min-width: 1200px;
+  width: 100%;
+}
+
+#title .title-group {
+  width: 50%;
+  height: calc(100vh);
+  float: left;
+  padding-left: 100px;
+  display: flex;
+  align-items: center; 
+}
+
+#title .title-group h2 {
+  font-size: 4.4vw;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#title .title-group h2 > span {
+  font-weight: 800;
+  color: rgba(24, 10, 104);
+}
+
+#title figure {
+  width: 50%;
+  float: left;
+  text-align: center;
+  height: calc(100vh);
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 80%;
+  background-size: contain;
+}
+
+#title figure img {
+  max-width: 100%;
+}
+
+.more-btn {
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-top: 1em;
+}
+
+nav.bottom {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav.bottom > ul > li {
+  display: inline-block; 
+  text-align: center;
+}
+nav.bottom > ul > li > a {
+  display: block;
+}
+nav.bottom > ul > li > a > img {
+  width: 50%;
+}
+nav.sns {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav.sns img {
+  width: 32px;
+  margin-bottom: 1em;
+}
+nav.sns > ul > li > a > img {
+  transition: 0.5s;
+}
+nav.sns > ul > li > a > img:hover {
+  transform: scale(1.5);
+}
+nav.bottom > ul > li > a {
+  transition: 0.5s;
+}
+nav.bottom > ul > li > a:hover {
+  transform: scale(1.5);
+}
