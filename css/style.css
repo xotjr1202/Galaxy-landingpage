@@ -7,7 +7,7 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   color: #000;
-  background: linear-gradient(0deg, rgb(24, 10, 104), #fff 20%);
+  background: linear-gradient(0deg, #180a68, #fff 20%);
 }
 
 p {
@@ -43,7 +43,7 @@ ul {
 #gnb > ul > li > a {
   text-decoration: none;
   color: #000;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 1000;
 }
 
@@ -79,10 +79,6 @@ ul {
   display: flex;
   align-items: center; 
   justify-content: center; 
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 80%;
-  background-size: contain;
 }
 
 #title figure img {
